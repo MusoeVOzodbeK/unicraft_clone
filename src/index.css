@@ -1,13 +1,69 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: 0;
+  box-sizing: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --active-color: #6aade3;
+  --hover-active: rgba(106, 173, 227, 0.2);
+  --color-btn: #7bb63d;
+  --color-header: #111111;
+  --font-color: #262626;
+  --font-family:"Montserrat", sans-serif;
+  
+  --transition: 0.3s;
+  
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+body {
+  background-color: white;
+}
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+h1 {
+  font-size: 3.25rem;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+section {
+  margin-top: 8rem;
+}
+@media screen and (max-width : 1024px){
+	.container{
+		width: var(--container-width-md);
+	}
+	section{
+		margin-top: 6rem;
+	}
+}
+@media screen and(max-width : 600px){
+	.container {
+		width: var(--container-width-ms);
+	  }
 }

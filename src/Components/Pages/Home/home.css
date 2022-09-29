@@ -1,0 +1,207 @@
+.top div {
+  padding: 220px 0;
+  height: 93vh;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(106, 173, 227, 0.5);
+}
+.top div h1 {
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  line-height: 57.2px;
+  letter-spacing: 0.78px;
+}
+.top div p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: white;
+  margin: 26px 0 0;
+}
+.top div button {
+  margin: 66px auto 0;
+  background-color: #7bb63d;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 447px;
+  height: 72px;
+  font-size: 24px;
+  line-height: 72px;
+  letter-spacing: normal;
+  transition: var(--transition);
+}
+.top div button:hover {
+  box-shadow: rgb(62, 91, 31, 0.45) 0 2px 5px 0;
+  transform: scale(1.1);
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+  bottom: 0;
+  z-index: -1;
+  object-position: inherit;
+}
+.main {
+  position: relative;
+}
+.main .aaaa {
+  padding: 100px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px -5px;
+  border-radius: 8px;
+  left: 50%;
+  transform: translateY(-10%);
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+}
+.main .aaaa h1 {
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+}
+.main .aaaa .image {
+  margin: 32px 0;
+  justify-content:space-around;
+  display: flex;
+  gap: 100px;
+}
+.main div .image img {
+  transition: var(--transition);
+  opacity: 0.5;
+  width: 200px;
+}
+.main div .image img:hover {
+  opacity: 1;
+}
+.bottom > div {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.bottom div article {
+  position: relative;
+  width: 300px;
+  z-index: 55185164;
+}
+.bottom div article h1 {
+  position: absolute;
+  font-size: 140px;
+  z-index: -1;
+  margin: 0;
+}
+.bottom div article:nth-child(1) h1,
+.bottom div article:nth-child(2) h1 {
+  color: var(--active-color);
+  opacity: 0.5;
+}
+.bottom div article:nth-child(3) h1 {
+	color: var(--color-btn);
+	opacity: 0.5;
+}
+.bottom > h1{
+	text-align: center;
+	font-size: 40px;
+	line-height: 44px;
+	text-align: center;
+	letter-spacing: 0.8px;
+}
+.bottom div article div h3{
+	font-size: 24px;
+	line-height: 31.2px;
+	text-align: center;
+	letter-spacing: normal;
+	margin: 70px 0 12px;
+}
+.bottom div article div p{
+	font-size: 16px;
+	line-height: 20.8px;
+	text-align: center;
+	letter-spacing: normal;
+}
+.bottom div article div {
+  /* width: ; */
+  margin: 80px 10px 0;
+}
+.bottom div article .imageOne {
+  width: 100%;
+  background: url("../../../assets/asset\ 12.png");
+}
+.bottom div article .imageTwo {
+  background: url("../../../assets/asset\ 14.png");
+  width: 100%;
+}
+.imageThree {
+	width: 100%;
+	background-position: left;
+  background: url("../../../assets/asset\ 16.png");
+}
+.bottom div article div div img{
+	transform: translateY(80px);
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width : 850px){
+  .main .aaaa .image{
+    flex-direction: column;
+    margin: 60px auto;
+    align-items: center;
+  }
+  .bottom > div{
+    flex-direction: column;
+    margin: 40px auto 0 auto;
+    align-items: center;
+    gap: 0;
+  }
+  .bottom div article {
+    width: 400px;
+  }
+  .top div h1, .main .aaaa h1, .bottom > h1{
+    font-size: 30px;
+  }
+  .top div{
+    padding: 100px 0;
+  }
+  .top div p{
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .top div button{
+    width: 80%;
+    font-size: 18px;
+    margin: 26px auto 0;
+  }
+  .main .aaaa{
+    padding: 0;
+  }
+}
+@media screen and (max-width : 400px){
+  .bottom div article {
+    width: 250px;
+  }
+  .top div button{
+    
+    font-size: 14px;
+  }
+}
