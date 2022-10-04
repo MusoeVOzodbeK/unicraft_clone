@@ -6,6 +6,7 @@ import photo2 from "../../../assets/photo_2022-09-29_22-39-43.jpg";
 import asset13 from "../../../assets/asset 13.png";
 import asset15 from "../../../assets/asset 15.png";
 import asset17 from "../../../assets/asset 17.png";
+import { Footer } from "../../Footer/Footer";
 function Home() {
   return (
     <>
@@ -40,7 +41,7 @@ function Home() {
             <article>
               <h1>1</h1>
               <div>
-                <Tilt tiltAxis={'y'}>
+                <Tilt tiltAxis={"y"}>
                   <div className="imageOne">
                     <img src={asset13} alt="" />
                   </div>
@@ -52,7 +53,7 @@ function Home() {
             <article>
               <h1>2</h1>
               <div>
-                <Tilt tiltAxis={'y'}>
+                <Tilt tiltAxis={"y"}>
                   <div className="imageTwo">
                     <img src={asset15} alt="" />
                   </div>
@@ -64,7 +65,7 @@ function Home() {
             <article>
               <h1>3</h1>
               <div>
-                <Tilt tiltAxis={'y'}>
+                <Tilt tiltAxis={"y"}>
                   <div className="imageThree">
                     <img src={asset17} alt="" />
                   </div>
@@ -76,6 +77,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
