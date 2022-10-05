@@ -1,13 +1,21 @@
 import React from "react";
 import "./home.css";
+import "./home.scss";
 import Tilt from "react-parallax-tilt";
 import photo1 from "../../../assets/photo_2022-09-29_22-40-33.jpg";
 import photo2 from "../../../assets/photo_2022-09-29_22-39-43.jpg";
 import asset13 from "../../../assets/asset 13.png";
 import asset15 from "../../../assets/asset 15.png";
 import asset17 from "../../../assets/asset 17.png";
+import asset18 from "../../../assets/asset 18.png";
+import asset19 from "../../../assets/asset 19.png";
+import asset20 from "../../../assets/asset 20.png";
+import asset21 from "../../../assets/asset 21.png";
+import asset22 from "../../../assets/asset 22.png";
+import asset23 from "../../../assets/asset 23.png";
 import { Footer } from "../../Footer/Footer";
 function Home() {
+  const newLocal = "containet-one";
   return (
     <>
       <div className="home">
@@ -76,8 +84,52 @@ function Home() {
             </article>
           </div>
         </div>
+        <div className="newLocal">
+          <h1>Решим любую вашу задачу</h1>
+          <div>
+            <article>
+              <img src={asset18} alt="" />
+              <h3>Онлайн-обучение для клиентов</h3>
+              <p>Зарабатывайте на предоставлении доступа к курсам</p>
+              <h6>Подробнее</h6>
+            </article>
+            <article>
+              <img src={asset19} alt="" />
+              <h3>Онлайн-обучение для клиентов</h3>
+              <p>Зарабатывайте на предоставлении доступа к курсам</p>
+              <h6>Подробнее</h6>
+            </article>
+            <article>
+              <img src={asset20} alt="" />
+              <h3>Онлайн-обучение для клиентов</h3>
+              <p>Зарабатывайте на предоставлении доступа к курсам</p>
+              <h6>Подробнее</h6>
+            </article>
+          </div>
+          <div>
+            <article>
+              <img src={asset21} alt="" />
+              <h3>Онлайн-обучение для клиентов</h3>
+              <p>Зарабатывайте на предоставлении доступа к курсам</p>
+              <h6>Подробнее</h6>
+            </article>
+            <article>
+              <img src={asset22} alt="" />
+              <h3>Онлайн-обучение для клиентов</h3>
+              <p>Зарабатывайте на предоставлении доступа к курсам</p>
+              <h6>Подробнее</h6>
+            </article>
+            <article>
+              <img src={asset23} alt="" />
+              <h3>Онлайн-обучение для клиентов</h3>
+              <p>Зарабатывайте на предоставлении доступа к курсам</p>
+              <h6>Подробнее</h6>
+            </article>
+          </div>
+        </div>
+        .
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
